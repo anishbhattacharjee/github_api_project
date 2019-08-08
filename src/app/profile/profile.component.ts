@@ -55,7 +55,7 @@ export class ProfileComponent implements OnInit {
 
   }
 
-  showName(data){
+  showRepo(data){
     // console.log(data);
     this.profileservice.getRepos(data).subscribe(t => {
       this.repos = t;
